@@ -33,6 +33,9 @@ async def on_message(message):
     if message.author == client.user:
         return
     
+    if client.user not in message.mentions:
+        return
+    
     id_user = message.author.id
     nick_user = message.author.display_name
 
