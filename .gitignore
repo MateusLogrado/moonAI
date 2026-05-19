@@ -1,0 +1,15 @@
+# ambiente
+.venv/
+.env
+
+# banco de dados
+*.db
+biblioteca_moon/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# logs
+*.log
