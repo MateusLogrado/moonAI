@@ -25,10 +25,10 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-if message.author == client.user:
-    return
-if not any(mention.id == client.user.id for mention in message.mentions):
-    return
+    if message.author == client.user:
+        return
+    if not any(mention.id == client.user.id for mention in message.mentions):
+        return
 
     id_user = message.author.id
     nick_user = message.author.display_name
